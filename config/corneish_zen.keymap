@@ -62,6 +62,11 @@
     };
 };
 
+&lt {
+    tapping-term-ms = <TAPPING_TERM>;
+    quick-tap-ms = <QUICK_TAP>;
+};
+
 / {
     behaviors {
         hm: homerow_mods {
