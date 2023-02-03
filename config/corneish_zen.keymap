@@ -11,6 +11,10 @@
 #define _MEDIA 6
 #define _ADJUST 7
 
+&mt {
+    tapping-term-ms = <300>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
