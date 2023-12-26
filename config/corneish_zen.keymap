@@ -94,9 +94,9 @@
                 default_layer {
                         label = "QWERTY";
                         bindings = <
-   &kp Q      &kp W      &kp E       &kp R       &kp T   &kp Y &kp U        &kp I        &kp O      &kp P
-   &kp A      &kp S      &kp D       &kp F       &kp G   &kp H &kp J        &kp K        &kp L      &kp LGUI SQT
-   &kp Z      &kp X      &kp C       &kp V       &kp B   &kp N &kp M        &kp COMMA    &kp DOT    &kp FSLH
+   &kp Q      &kp W      &kp E       &kp R       &kp T        &kp Y    &kp U        &kp I        &kp O      &kp P
+   &kp A      &kp S      &kp D       &kp F       &kp G        &kp H    &kp J        &kp K        &kp L      &kp LGUI SQT
+   &kp Z      &kp X      &kp C       &kp V       &kp B        &kp N    &kp M        &kp COMMA    &kp DOT    &kp FSLH
               &mo _NAVI       &kp LSHFT       &lt _MOUSE TAB  &lt _MEDIA RET   &kp SPC          &mo _SYMBOL
                         >;
                 };
@@ -135,7 +135,7 @@
                         label = "NUMBER";
                         bindings = <
    &kp N1     &kp N2    &kp N3    &kp N4       &kp N5     &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
-   &sk LGUI   &sk LALT  &sk LCTRL &kp LSHFT    &kp MINUS  &kp PLUS  &sk LSHFT &sk LCTRL &sk LALT  &sk LGUI
+   &sk LGUI   &sk LALT  &sk LCTRL &sk LSHFT    &kp MINUS  &kp PLUS  &sk LSHFT &sk LCTRL &sk LALT  &sk LGUI
    &none      &none     &none     &none        &none      &none     &none     &kp COMMA &kp DOT   &none
               &trans    &none     &none                             &none     &none     &trans
                         >;
@@ -154,9 +154,9 @@
                 media_layer {
                         label = "MEDIA";
                         bindings = <
-   &none      &none      &none       &none       &none      &none       &none         &none         &none       &none
-   &kp LGUI   &kp LALT   &kp LCTRL   &kp LSHFT   &none      &none       &kp K_PP      &kp K_STOP2   &kp K_PREV  &kp K_NEXT
-   &none      &none      &none       &none       &none      &none       &kp K_VOL_DN  &kp K_MUTE    &K_VOL_UP   &none
+   &none      &none      &none       &none       &none      &none       &none         &none         &none          &none
+   &kp LGUI   &kp LALT   &kp LCTRL   &kp LSHFT   &none      &none       &kp K_PP      &kp K_STOP2   &kp K_PREV     &kp K_NEXT
+   &none      &none      &none       &none       &none      &none       &kp K_VOL_DN  &kp K_MUTE    &kp K_VOL_UP   &none
               &none      &none       &none                              &trans        &none         &none
                         >;
                 };
