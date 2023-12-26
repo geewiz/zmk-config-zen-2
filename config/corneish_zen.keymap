@@ -124,7 +124,7 @@
                 symbol_layer {
                         label = "SYMBOL";
                         bindings = <
-   &kp EXCL   &kp AT    &kp HASH   &kp DLLR    &PRCNT     &CARET    &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR
+   &kp EXCL   &kp AT    &kp HASH   &kp DLLR    &kp PRCNT  &kp CARET &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR
    &none      &kp LBRC  &kp LBKT   &kp LPAR    &kp GRAVE  &kp TILDE &kp MINUS &kp PLUS  &kp EQUAL &none
    &kp PIPE   &kp RBRC  &kp RBKT   &kp RPAR    &none      &none     &kp UNDER &kp SEMI  &kp COLON &kp BSLH
               &mo _NUMBER  &mo _ADJUST  &trans            &none     &none     &trans
