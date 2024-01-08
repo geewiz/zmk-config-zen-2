@@ -78,6 +78,13 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+        swapper: swapper {
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAPPER";
+            #binding-cells = <0>;
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+            ignored-key-positions = <21>;
+        };
     };
 };
 
@@ -114,7 +121,7 @@
                 navi_layer {
                         label = "NAVI";
                         bindings = <
-   &sk RGUI   &sk RALT   &sk RCTRL   &sk RSHFT   &kp RGUI     &kp TAB     &kp ESC      &none       &none      &caps_word
+   &sk RGUI   &sk RALT   &sk RCTRL   &sk RSHFT   &kp RGUI     &kp TAB     &kp ESC      &swapper    &none      &caps_word
    &sk LGUI   &sk LALT   &sk LCTRL   &sk LSHFT   &kp LGUI     &kp LEFT    &kp DOWN     &kp UP      &kp RIGHT  &kp ENTER
    &kp LC(Z)  &kp LC(X)  &kp LC(C)   &kp LC(V)   &kp DEL      &kp HOME    &kp PG_DN    &kp PG_UP   &kp END    &kp INS
               &trans     &none       &none                          &none        &kp BSPC    &mo _NUMBER
