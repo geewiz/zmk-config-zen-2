@@ -20,6 +20,20 @@
 20 21 22 23 24        25 26 27 28 29
         30 31 32    33 34 35         */
 
+/* Layers (momentary) */
+#define LY_SYM &mo _SYMBOL
+#define LY_NAV &mo _NAVI
+#define LY_NUM &mo _NUMBER
+#define LY_ADJ &mo _ADJUST
+
+/* Layer taps */
+#define ESC_NAV &lt _NAVI ESC
+#define SPC_NUM &lt _NUMBER SPC
+#define RET_SYM &lt _SYMBOL RET
+
+/* Mod taps */
+#define BSP_SFT &mt LSHFT BSPC
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -97,7 +111,7 @@
    &kp Q      &kp W           &kp E           &kp R       &kp T        &kp Y            &kp U        &kp I        &kp O      &kp P
    &kp A      &kp S           &kp D           &kp F       &kp G        &kp H            &kp J        &kp K        &kp L      &kp SQT
    &kp Z      &kp X           &kp C           &kp V       &kp B        &kp N            &kp M        &kp COMMA    &kp DOT    &kp FSLH
-              &lt _MOUSE ESC  &lt _NAVI ESC   &mt LSHFT BSPC                            &lt _NUMBER SPC    &lt _SYMBOL RET    &none
+              &none           ESC_NAV         BSP_SFT                                   SPC_NUM      RET_SYM      &none
                         >;
                 };
 
@@ -117,7 +131,7 @@
    &sk RGUI   &sk RALT   &sk RCTRL   &sk RSHFT   &kp RGUI     &kp TAB     &kp ESC      &none       &none      &caps_word
    &sk LGUI   &sk LALT   &sk LCTRL   &sk LSHFT   &kp LGUI     &kp LEFT    &kp DOWN     &kp UP      &kp RIGHT  &kp ENTER
    &kp LC(Z)  &kp LC(X)  &kp LC(C)   &kp LC(V)   &kp DEL      &kp HOME    &kp PG_DN    &kp PG_UP   &kp END    &kp INS
-              &none      &trans      &none                                &kp BSPC     &mo _NUMBER &none
+              &none      &trans      &none                                &kp BSPC     LY_NUM      &none
                         >;
                 };
 
@@ -127,7 +141,7 @@
    &kp EXCL   &kp AT       &kp HASH     &kp DLLR    &kp PRCNT  &kp CARET &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR
    &none      &kp LBRC     &kp LBKT     &kp LPAR    &kp GRAVE  &kp TILDE &kp MINUS &kp PLUS  &kp EQUAL &none
    &kp PIPE   &kp RBRC     &kp RBKT     &kp RPAR    &none      &none     &kp UNDER &kp SEMI  &kp COLON &kp BSLH
-              &mo _ADJUST  &mo _NUMBER  &none                  &none     &trans    &none
+              LY_ADJ       LY_NUM       &none                  &none     &trans    &none
                         >;
                 };
 
@@ -147,7 +161,7 @@
    &kp LG(N1) &kp LG(N2) &kp LG(N3)  &kp LG(4)   &kp LG(5)  &kp LG(6) &kp LG(7)    &kp LG(8)    &kp LG(9)  &kp LG(0)
    &kp LGUI   &kp LALT   &kp LCTRL   &kp LSHFT   &none      &none     &none        &none        &none      &none
    &none      &none      &none       &none       &none      &none     &none        &none        &none      &none
-              &trans     &trans      &trans                           &trans       &mo _ADJUST  &trans
+              &trans     &trans      &trans                           &trans       LY_ADJ       &trans
                         >;
                 };
 
