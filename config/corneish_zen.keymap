@@ -111,7 +111,7 @@
    &kp Q      &kp W           &kp E           &kp R       &kp T        &kp Y            &kp U        &kp I        &kp O      &kp P
    &kp A      &kp S           &kp D           &kp F       &kp G        &kp H            &kp J        &kp K        &kp L      &kp SQT
    &kp Z      &kp X           &kp C           &kp V       &kp B        &kp N            &kp M        &kp COMMA    &kp DOT    &kp FSLH
-              &none           ESC_NAV         BSP_SFT                                   SPC_NUM      RET_SYM      &none
+              &none           LY_NAV          &kp LSHFT                                 &kp SPC      LY_SYM       &none
                         >;
                 };
 
@@ -131,7 +131,7 @@
    &sk RGUI   &sk RALT   &sk RCTRL   &sk RSHFT   &kp RGUI     &kp TAB     &kp ESC      &none       &none      &caps_word
    &sk LGUI   &sk LALT   &sk LCTRL   &sk LSHFT   &kp LGUI     &kp LEFT    &kp DOWN     &kp UP      &kp RIGHT  &kp ENTER
    &kp LC(Z)  &kp LC(X)  &kp LC(C)   &kp LC(V)   &kp DEL      &kp HOME    &kp PG_DN    &kp PG_UP   &kp END    &kp INS
-              &none      &trans      &none                                &kp BSPC     LY_NUM      &none
+              &none      &trans      &none                                &kp BSPC     &kp RET     &none
                         >;
                 };
 
@@ -141,7 +141,7 @@
    &kp EXCL   &kp AT       &kp HASH     &kp DLLR    &kp PRCNT  &kp CARET &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR
    &none      &kp LBRC     &kp LBKT     &kp LPAR    &kp GRAVE  &kp TILDE &kp MINUS &kp PLUS  &kp EQUAL &none
    &kp PIPE   &kp RBRC     &kp RBKT     &kp RPAR    &none      &none     &kp UNDER &kp SEMI  &kp COLON &kp BSLH
-              LY_ADJ       LY_NUM       &none                  &none     &trans    &none
+              LY_ADJ       LY_ADJ       LY_NUM                 &none     &trans    &none
                         >;
                 };
 
@@ -151,7 +151,7 @@
    &kp N1     &kp N2    &kp N3    &kp N4       &kp N5     &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
    &sk LGUI   &sk LALT  &sk LCTRL &sk LSHFT    &kp MINUS  &kp PLUS  &sk LSHFT &sk LCTRL &sk LALT  &sk LGUI
    &none      &none     &none     &none        &none      &none     &none     &kp COMMA &kp DOT   &none
-              &none     &trans    &none                             &none     &trans    &none
+              &none     &none     &trans                            &none     &trans    &none
                         >;
                 };
 
@@ -181,7 +181,7 @@
    &kp F1      &kp F2       &kp F3          &kp F4      &kp F5           &kp F6      &kp F7        &kp F8        &kp F9        &kp F10
    &kp LGUI    &kp LALT     &kp LCTRL       &kp LSHFT   &bootloader      &none       &none         &none         &none         &none
    &kp F11     &kp F12      &kp PAUSE_BREAK &kp PSCRN   &kp SLCK         &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
-               &trans       &none           &none                                    &none         &trans        &none
+               &trans       &trans          &none                                    &none         &trans        &none
                         >;
                 };
 
